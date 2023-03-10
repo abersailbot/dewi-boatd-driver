@@ -113,7 +113,7 @@ class DewiDriver(boatd.BaseBoatdDriver):
 
                 print('Depth data:', repr(data))
 
-                split_data = data.split(“,”)
+                split_data = data.split(",")
                 # example: $SDDBT,6.6,f,2.0,M,1.1,F
                 self.depth_feet = float(split_data[1])
                 self.depth_metres = float(split_data[3])
